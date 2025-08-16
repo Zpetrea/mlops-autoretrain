@@ -1,0 +1,37 @@
+﻿# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+.conda/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Notebooks / caches / logs ---
+.ipynb_checkpoints/
+*.log
+.cache/
+pip-wheel-metadata/
+
+# --- Local MLflow runs (we log to DagsHub MLflow) ---
+mlruns/
+
+# --- Artifacts: keep the text note, ignore heavy binaries ---
+artifacts/current_model/*.pkl
+artifacts/**/*.bin
+!artifacts/current_model/readme.txt
+
+# --- DVC local cache/temp (keep .dvc config tracked) ---
+.dvc/cache/
+.dvc/tmp/
